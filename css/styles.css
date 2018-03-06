@@ -1,0 +1,102 @@
+* {margin: 1px; padding: 2px;}
+
+@font-face {
+font-familybody:'myfont';
+font-family:'myfont';
+font-style:light;
+src: url('../fonts/Grundschrift-Light.otf');
+}
+
+body {
+font-family: 'myfont';
+font-size: 10pt;
+font-style: light;
+}
+
+
+h2 {
+color: hsl(24, 100%, 41%);
+font-size: 18pt;
+}
+
+h3,h4,h5,h6 {
+font-size: 13pt;
+color: hsl(200,60%,60%);
+}
+
+p {
+color: DarkBlue;
+font-size: 17px;
+}
+
+
+.copyright1 {
+color: DarkBlue;
+}
+
+.copyright2 {
+color: blue;
+}
+
+
+a:link {
+color: DarkBlue;
+font-size: 13pt;
+padding: 3pt;
+font-weight: bold;
+line-height: 1.5em;
+}
+
+a:visited {
+color: deeppink;
+}
+
+a:hover {
+/*TRANSICION*/
+transition: background 2s ease;
+background: hsl(60, 100%, 90%);
+}
+
+a:active {
+color: hsl(145, 61%, 59%);
+}
+
+
+.logo {
+/*TRANSFORMACION*/
+transform: scale(1.5,1.5);
+animation: mymove 5s infinite;
+/*ANIMACION*/
+-webkit-transform: rotate(360deg);
+}
+
+.searcher {
+color: DarkBlue;
+font-size: 17px;
+display: flex;
+justify-content: flex-end;
+}
+
+.contenedor {
+width:80%;
+max-width:1000px;
+margin:0 auto;
+overflow:hidden;
+}
+
+@media screen and (max-width: 800px){
+ body{
+background:#E9967A;
+}
+}
+
+.imagenArtista img {
+width:50%;
+height:auto;
+}
+@media screen and (max-width: 400px){
+.contenedor{
+width:100%;
+}
+}
+
